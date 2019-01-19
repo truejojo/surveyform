@@ -7,6 +7,65 @@
   <title>Survey Form</title>
 </head>
 <body>
-  
+  <main>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know how we can improve freeCodeCapmp</p>
+
+    <form id="survey-form">
+
+      <label for="name">* Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      <label for="email">* Email:</label>
+      <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+      <label for="age">* Age:</label>
+      <input type="number" name="age" id="age" placeholder="Age" required>
+
+
+      <label for="role">Which option best describes your current role?</label>
+      <select id="role">
+        <option value="student">Student</option>
+        <option value="job">Full time job</option>
+        <option value="learner">Full time learner</option>
+        <option value="hobby">Hobby programmer</option>
+        <option value="other">Other</option>
+        <option value="notsay">Prefer not to say</option>
+      </select>
+
+      
+      <p>* How likely is that you would recommend freeCodeCapmp to a friend?</p>
+      <input type="radio" id="definitely" name="friend" value="definitely">
+      <label for="definitely">Definitely</label>
+      <input type="radio" id="maybe" name="friend" value="maybe">
+      <label for="maybe">Maybe</label>
+      <input type="radio" id="notsure" name="friend" value="notsure">
+      <label for="notsure">Not sure</label>
+
+
+      <label for="fcc">What do you like most in FCC:</label>
+      <select id="fcc">
+        <option value="aufgaben">Aufgaben</option>
+        <option value="projekte">Projekte</option>
+        <option value="community">Community</option>
+        <option value="opensource">Open Source</option>
+      </select>
+
+
+      <p>Things that should be improved in the future(Check all that apply):</p>
+      <input type="checkbox" id="materialize" name="materialize">
+      <label for="materialize">Materialize without jQuery</label>
+      <input type="checkbox" id="dommanipulation" name="dommanipulation">
+      <label for="dommanipulation">Manipulation of the DOM with vanilla es6</label>
+      <input type="checkbox" id="fullproject" name="fullproject">
+      <label for="fullproject">Full Project with vanilla es6 node/express mongo materialize css3 and so on...</label>
+
+
+      <p>Any Comments or Suugestions?</p>
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+
+      <button type="submit" id="submit">Submit</button>
+
+    </form>
+  </main>
 </body>
 </html>
