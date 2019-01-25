@@ -1,0 +1,116 @@
+body {
+  background-color: #A4D3EE;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 26px;
+}
+#form-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #efefef;
+  padding: 4% 5% 2%;
+}
+body h1,
+#form-wrapper > p {  
+  text-align: center;
+}
+h1 {
+  font-size: 48px;
+}
+#input-fields-group {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+}
+#input-fields-group label,
+#input-fields-group input {
+  margin-bottom: 3%;
+  width: 80%;
+}
+#dropdown-group,
+#fcc-group {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 100%; 
+  margin-top: 6% 
+}
+#dropdown-group select,
+#fcc-group select {
+  margin-top: 3%;
+  margin-right: 60%;
+}
+#friend-group,
+#teach-group {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+  margin-top: 3%;
+}
+#friend-group div,
+#teach-group div {
+  margin-bottom: 2%;
+}
+#comments-group textarea {
+  width: 80%;
+}
+#submit {
+  display: block;
+  margin: 5% auto;
+  background-color: darkblue;
+  color: #fff;
+  padding: 2% 5%;
+  font-size: 26px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+@media (min-width: 900px ) {
+  #form-wrapper {
+    width: 70%;
+    max-width: 1060px;
+  } 
+  #survey-form {
+    padding: 3% 5%;
+  }
+  #input-fields-group {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    column-gap: 5%;
+  }
+  #input-fields-group label {
+    text-align: right;
+    width: 100%;
+  }
+
+  #dropdown-group,
+  #fcc-group {
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%; 
+    column-gap: 5%;
+  }
+  #dropdown-group label,
+  #fcc-group label {
+    text-align: right;
+  }
+
+  #friend-group,
+  #teach-group {
+    grid-template-columns: 50% 50%;
+    column-gap: 5%;
+    padding-top: 5%;
+  }
+  #friend-group p,
+  #teach-group p {
+    text-align: right;
+    margin: 0;
+  }
+
+  #comments-group {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+    column-gap: 5%;
+    padding-top: 5%;
+  }
+  #comments-group p {
+    text-align: right;
+  }
+}
